@@ -76,6 +76,7 @@ def get_same_or_newer(start_date,data):
           start_date = start_date + datetime.timedelta(days=1)
   
   def main():
+        # downloading the file only once and using it
       data = get_file_lines(FILE_URL)
       start_date = get_start_date()
       list_newer(start_date,data)
